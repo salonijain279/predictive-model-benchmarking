@@ -115,12 +115,3 @@ package — no manual download needed.
 - Real Estate Valuation is a small dataset (414 transactions from one city
   and time period); results should not be read as generalizing to other
   markets.
-
-## Résumé bullet
-
-> Predictive Model Benchmarking: Classification & Regression | Python, scikit-learn, XGBoost
-> Built a rigorous model-comparison pipeline (GridSearchCV + cross-validation,
-> leakage-safe preprocessing) across two independent studies — bank
-> term-deposit classification (XGBoost, ROC-AUC 0.934) and real estate price
-> regression (Random Forest, R² 0.828) — each benchmarking 6-7 algorithms
-> under identical evaluation conditions.
