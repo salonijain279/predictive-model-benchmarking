@@ -68,6 +68,15 @@ its clear RMSE/R² lead over every other model, including XGBoost.
 
 ## Methodology (both studies)
 
+```mermaid
+flowchart LR
+    A[Raw dataset] --> B[Train/test split held out first]
+    B --> C[ColumnTransformer: scale numeric, one-hot categorical]
+    C --> D[GridSearchCV per model on training folds]
+    D --> E[Held-out test evaluation]
+    E --> F[Select winner by test performance]
+```
+
 - Numeric and categorical features identified programmatically and handled
   through a `ColumnTransformer` (standard scaling for numeric, one-hot
   encoding for categorical), wrapped in an sklearn `Pipeline` so
